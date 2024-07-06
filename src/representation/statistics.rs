@@ -76,6 +76,13 @@ pub fn representation_statistics(stats: &Statistics) {
         FONT_SIZE,
         WHITE,
     );
+    draw_text(
+        &format!("Average Time: {} s", round_to_tenth(stats.average_time())),
+        TEXT_X_POS,
+        CENTER_Y + 80.0,
+        FONT_SIZE,
+        WHITE,
+    );
 }
 
 pub fn round_to_tenth(num: f32) -> f32 {
