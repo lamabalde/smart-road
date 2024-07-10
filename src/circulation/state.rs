@@ -66,7 +66,7 @@ impl State {
         });
     }
     pub fn add_car(&mut self, direction: Direction) {
-        if self.get_all_cars().iter().filter(|c| c.vel == 0.0).count() >= 8 {
+        if self.get_all_cars().iter().filter(|c| c.vel == 0.0).count() >= 6 {
             return;
         }
         match direction {

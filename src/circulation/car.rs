@@ -36,9 +36,7 @@ pub enum Model {
     Sport,
     TaxiVert,
     TaxiOrange,
-     TaxiNoire,
-     TaxiBleu,
-     TaxiRouge,
+     
 }
 // Ajuster les chances d'obtenir certaines voitures ici. Pourrait revoir et utiliser gen_range à la place.
 
@@ -86,10 +84,7 @@ impl Car {
             model: match gen_range(0, 9) {
                 0 => Model::TaxiVert,
                 1 => Model::Sport,
-                 2 => Model::TaxiNoire,
-                 3 => Model::TaxiRouge,
-                 4 => Model::TaxiBleu,
-                 5 => Model::TaxiOrange,
+                 3 => Model::TaxiOrange,
                 _ => Model::Standard,
             },
         }
@@ -300,6 +295,7 @@ impl Car {
     }
 
     pub fn add_time(&self, stats: &mut Statistics) {
+
         let duration = SystemTime::now().duration_since(self.time).unwrap();
         stats.set_time(duration.as_secs_f32());
     }
