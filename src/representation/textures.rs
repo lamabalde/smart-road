@@ -1,10 +1,10 @@
 use macroquad::prelude::*;
 
-const CAR_SPRITES: [&str; 4] = [
+const CAR_SPRITES: [&str; 3] = [
     "assets/cars/1.png",
     "assets/cars/2.png",
     "assets/cars/6.png",
-     "assets/cars/4.png",
+     //"assets/cars/4.png",
     
 ];
 

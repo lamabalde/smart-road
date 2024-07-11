@@ -51,8 +51,8 @@ impl Route {
         paths.into_iter().choose(&mut rand::thread_rng())
     }
 
-    fn available_lanes(&self) -> [bool; 7] {
-        let mut available = [false, false, false,false,false,false,false];
+    fn available_lanes(&self) -> [bool; 3] {
+        let mut available = [false, false, false];
 
         if self.cars[0].is_empty() {
             available[0] = true;

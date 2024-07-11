@@ -80,7 +80,8 @@ pub mod controls {
         }
 
         if is_key_pressed(KeyCode::R) {
-            state.random = !state.random;
+           // state.random = !state.random;
+           state.add_car_random();
         }
     }
 }

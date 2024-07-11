@@ -9,7 +9,7 @@ pub fn representation_car(car: &Car, textures: &[Texture2D]) {
         Model::Standard => &textures[0],
         Model::Sport => &textures[1],
         Model::TaxiVert => &textures[2],
-        Model::TaxiOrange => &textures[3],
+       // Model::TaxiOrange => &textures[3],
        
     };
     // Déterminer quel sprite utiliser en fonction de la direction de la voiture.
